@@ -6,104 +6,334 @@
     <script src="bootstrap-4.4.1-dist/JQuery/jquery-3.4.1.slim.js"></script>
     <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="slick/slick.css"/>    
+    <link rel="stylesheet" href="slick/slick-theme.css"/>    
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     <title>Distribucion Continua</title>
 </head>
 <body>
-    <div class="container-fluid" style="min-height: 200px; background-color: rgba(14, 14, 15, 0.226)">
-        <div class="row text-black text-center align-middle" 
-            style="height: 150px;">
-          <div class="col" style="max-width:15%; max-height: 200px" >
-            <img src="images/universidad.jpg" 
-                class="rounded float-left img-fluid" alt="Responsive image" 
-                style="max-width: 160px; max-height: 170px; margin-top: 10%; margin-left: 5%;">
-          </div>
-          <div class="col" style="max-width:70%; max-height: 200px">
-            <div class="jumbotron jumbotron-fluid bg-transparent" style="padding: 0; min-height:200px" >
-                <div class="container" >
-                  <h1 class="display-4" style="padding-top: 40px;">Funciones de Distribucion Continua</h1>
-                  <p class="lead">
-                      Teoria y ejemplos de variable continua y sus distribuciones
-                  </p>
-                </div>
-              </div>
-          </div>
-          <div class="col" style="max-width:15%; max-height: 200px">
-              <div>
-                <img src="images/bogota.jpg" 
-                class="" alt="Responsive image" 
-                style="max-width: 140px; max-height: 140px;margin-top: 10%; margin-right: 5%;">
-                  
-              </div>
-           
-          </div>
+  
+  <main class="container-fluid">
+    <div class="row"> 
+      <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
           
+        <div>
+        <img src="images/universidad.jpg" 
+          class="rounded float-left img-fluid left-image" alt="Responsive image" >
+        </div> 
+        
+        <div class="tm-brand-box">
+          <h1 class="tm-brand text-uppercase">
+            Funciones de Distribución de Variable Continua
+          </h1>
         </div>
-    </div>
-    <div>
-        <div class="row">
-            <div class="col">
-                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Variable Continua</h1>
-                <div class="card-body">
-                    La distribución normal continua puede describir la distribución del peso de hombres adultos. 
-                    Por ejemplo, usted puede calcular la probabilidad de que un hombre pese entre 160 y 170 libras.
+      
+        <ul id="tmMainNav" class="nav flex-column text-uppercase text-left tm-main-nav">
+          <li class="nav-item">
+            <a href="#1" class="nav-link active">
+              <span class="d-inline-block mr-3">Funciones de Densidad</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#2" class="nav-link">
+              <span class="d-inline-block mr-3">Funciones de Distribucion Acumulativa</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#3" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion Exponencial</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#4" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion Gama</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#5" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion Ji Cuadrada</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#6" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion Weibull</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#7" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion lognormal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#8" class="nav-link">
+              <span class="d-inline-block mr-3">Distribucion beta</span>
+            </a>
+          </li>
+        </ul>
+        
+      </nav>
+        
+        <main role="main" class="ml-sm-auto col-12">
+          <br><br><br>
+          <div class="tm-section-wrap">
+            <section id="1" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                                          
+                    <h2 class="tm-section-title tm-color-primary font-italic mb-4">Funciones de Densidad</h2>
+                    <p>
+                      <small>
+                        En el estudio de la ecología de un lago, se mide la profundidad en lugares seleccionados,
+                        entonces X  la profundidad en ese lugar es una variable aleatoria continua. En este caso A
+                        es la profundidad mínima en la región muestreada y B es la profundidad máxima.
+                      </small>
+                    </p>
+                    
                 </div>
-                <img src="images/distribucion continua.jpg" 
-                class="rounded float-left img-fluid" alt="Responsive image" 
-                style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
-
+              </div>
+              <div class="col-xl-6">
+                <div class="tm-section-half">
+                    
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                      <div class="accordion" id="accordionExample">
+                      <div class="card tm-bg-black-transparent text-justify">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-success" type="button" 
+                              data-toggle="collapse" data-target="#collapseOne" 
+                              aria-expanded="false" aria-controls="collapseOne">
+                                Definición
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <small>
+                                Sea X una variable aleatoria continua. Entonces, una distribución de probabilidad o
+                                función de densidad de probabilidad (fdp) de X es una función f(x) tal que para dos
+                                números cualesquiera a y b con a menor o igual a b,
+                              </small><br>
+                              <img src="images/DefDist.jpg" alt="Responsive image"><br>
+                              <small>
+                                Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
+                                este intervalo y bajo la gráfica de la función de densidad.
+                                La gráfica de f(x) a menudo se conoce como curva de densidad.
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card tm-bg-black-transparent">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-success" type="button" 
+                              data-toggle="collapse" data-target="#collapseTwo" 
+                              aria-expanded="false" aria-controls="collapseTwo">
+                                Definición Distribución Uniforme
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <small>
+                                Se dice que una variable aleatoria continua X tiene una distribución uniforme
+                                 en el intervalo [A, B] si la función de densidad de probabilidad de X es
+                              </small><br>
+                              <img src="images/DefUni.jpg" alt="Responsive image">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card tm-bg-black-transparent ">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ejemplo Interactivo
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            Ejemplo Interactivo</div>
+                          </div>
+                        </div>
+                
+                      </div>
+                </div>    
+              </div>
+            </section>
+          </div>
+          <br><br><br><br><br><br><br>
+          <div class="tm-section-wrap">
+            <section id="2" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                                          
+                    <h2 class="tm-section-title tm-color-primary font-italic mb-4">Funciones de Distribución Acumulativa</h2>
+                    <p>
+                      <small>
+                        En el estudio de la ecología de un lago, se mide la profundidad en lugares seleccionados,
+                        entonces X  la profundidad en ese lugar es una variable aleatoria continua. En este caso A
+                        es la profundidad mínima en la región muestreada y B es la profundidad máxima.
+                      </small>
+                    </p>
+                    
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="tm-section-half">
+                    
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                      <div class="accordion" id="accordionExample">
+                      <div class="card tm-bg-black-transparent text-justify">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link text-success" type="button" 
+                              data-toggle="collapse" data-target="#collapseOne" 
+                              aria-expanded="false" aria-controls="collapseOne">
+                                Definición
+                              </button>
+                            </h2>
+                          </div>
+                      
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <small>
+                                Sea X una variable aleatoria continua. Entonces, una distribución de probabilidad o
+                                función de densidad de probabilidad (fdp) de X es una función f(x) tal que para dos
+                                números cualesquiera a y b con a menor o igual a b,
+                              </small><br>
+                              <img src="images/DefDist.jpg" alt="Responsive image"><br>
+                              <small>
+                                Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
+                                este intervalo y bajo la gráfica de la función de densidad.
+                                La gráfica de f(x) a menudo se conoce como curva de densidad.
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card tm-bg-black-transparent">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-success" type="button" 
+                              data-toggle="collapse" data-target="#collapseTwo" 
+                              aria-expanded="false" aria-controls="collapseTwo">
+                                Definición Distribución Uniforme
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                              <small>
+                                Se dice que una variable aleatoria continua X tiene una distribución uniforme
+                                 en el intervalo [A, B] si la función de densidad de probabilidad de X es
+                              </small><br>
+                              <img src="images/DefUni.jpg" alt="Responsive image">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card tm-bg-black-transparent ">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Ejemplo Interactivo
+                              </button>
+                            </h2>
+                          </div>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            Ejemplo Interactivo</div>
+                          </div>
+                        </div>
+                
+                      </div>
+                </div>    
+              </div>
+            </section>
+          </div>
+          <br><br><br><br><br><br><br>
+          <div class="tm-section-wrap">
+            <section id="3" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                                          
+                    <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Exponencial</h2>
+                    <p>
+                      <small>
+                        Suponga que el tiempo de respuesta X en una terminal de computadora en línea (el tiempo
+                        transcurrido entre el final de la consulta de un usuario y el inicio 
+                        de la respuesta del sistema a dicha consulta) tiene una distribución exponencial 
+                        con tiempo de respuesta esperado de 5 s. Entonces E(X)  1/  5, por lo tanto   0.2. 
+                        La probabilidad de que el tiempo de respuesta sea cuando mucho de 10 s es 
+                        P(X  10)  F(10; 0.2)  1  e(0.2)(10)  1  e2  1  0.135  0.865
+                        La probabilidad de que el tiempo de respuesta sea de entre 5 y 10 s es 
+                        P(5  X  10)  F(10; 0.2)  F(5; 0.2)  (1  e2)  (1  e1)  0.233
+                      </small>
+                    </p>
+                    
+                </div>
             </div>
-            <div class="col">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
+            <div class="col-xl-6">
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                    <div class="accordion" id="accordionExample">
+                    <div class="card tm-bg-black-transparent text-justify">
                         <div class="card-header" id="headingOne">
                           <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" 
+                            <button class="btn btn-link text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseOne" 
                             aria-expanded="false" aria-controls="collapseOne">
-                              Definicion de Variable Continua
+                              Definición
                             </button>
                           </h2>
                         </div>
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una variable continua es aquella que puede adoptar cualquier valor 
-                            en el marco de un intervalo que ya está predeterminado. Entre dos de los valores,
-                            siempre puede existir otro valor intermedio, susceptible de ser tomado como valor
-                            por la variable continua.
-                            Estas particularidades diferencian a la variable continua de la variable discreta, 
-                            que solo puede adquirir un valor de un conjunto de números. Existen separaciones
-                            entre los valores sucesivos que pueden observarse: es decir, que no se “llenan” 
-                            con otros valores intermedios.</div>
+                            <small>
+                              Sea X una variable aleatoria continua. Entonces, una distribución de probabilidad o
+                              función de densidad de probabilidad (fdp) de X es una función f(x) tal que para dos
+                              números cualesquiera a y b con a menor o igual a b,
+                            </small><br>
+                            <img src="images/DefDist.jpg" alt="Responsive image"><br>
+                            <small>
+                              Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
+                              este intervalo y bajo la gráfica de la función de densidad.
+                              La gráfica de f(x) a menudo se conoce como curva de densidad.
+                            </small>
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent">
                         <div class="card-header" id="headingTwo">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" 
+                            <button class="btn btn-link collapsed text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseTwo" 
                             aria-expanded="false" aria-controls="collapseTwo">
-                              Definicion distribucion de variable continua
+                              Definición Distribución Uniforme
                             </button>
                           </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una distribución continua describe las probabilidades de los posibles valores de una variable aleatoria continua. 
-                            Una variable aleatoria continua es una variable aleatoria con un conjunto de valores posibles
-                             (conocido como el rango) que es infinito y no se puede contar.
-
-                            Las probabilidades de las variables aleatorias continuas (X) se definen como el área
-                             por debajo de la curva de su PDF. Por lo tanto, solo los rangos de valores pueden tener 
-                             una probabilidad diferente de cero. La probabilidad de que una variable aleatoria continua 
-                             equivalga a algún valor siempre es cero.</div>
+                            <small>
+                              Se dice que una variable aleatoria continua X tiene una distribución uniforme
+                               en el intervalo [A, B] si la función de densidad de probabilidad de X es
+                            </small><br>
+                            <img src="images/DefUni.jpg" alt="Responsive image">
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent ">
                         <div class="card-header" id="headingThree">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Ejemplo Interactivo
                             </button>
                           </h2>
@@ -113,73 +343,91 @@
                           Ejemplo Interactivo</div>
                         </div>
                       </div>
+              
+                    </div>
+              </div>    
+            </div>
+          </div>
+          <br><br><br><br><br><br><br>
+          <div class="tm-section-wrap">
+            <section id="4" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                                          
+                    <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion Gamma</h2>
+                    <p>
+                      <small>
+                        
+                        La distribución Gamma sirve para calcular la probabilidad de ciertos eventos en experimentos que 
+                        siguen un proceso de Poisson. 
+                                  Por ejemplo, Suponga que las llamadas telefónicas que llegan a un conmutador particular siguen un
+                        proceso de Poisson con un promedio de 5 llamadas entrantes por minuto. ¿Cuál es la
+                        probabilidad de que transcurra hasta un minuto en el momento en que han entrado 2
+                        llamadas al conmutador?.
+                        La solución a este problema es P (X ≤ 1) = 0.96.
+                        (El procedimiento completo lo encontraras en la seccion del ejemplo interactivo)
+                      </small><br>
+                      <img src="images/distribuciones gamma.jpg" alt="Responsive image"
+                      style="max-width: 460px; max-height: 470px;">
+                    </p>
+                    
                 </div>
             </div>
-        </div>
-    </div>
-    <div>
-        <div class="row">
-            <div class="col">
-                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Distribucion Gamma</h1>
-                <div class="card-body">
-                    La distribución Gamma sirve para calcular la probabilidad de ciertos eventos en experimentos que 
-					siguen un proceso de Poisson. 
-                    Por ejemplo, Suponga que las llamadas telefónicas que llegan a un conmutador particular siguen un
-					proceso de Poisson con un promedio de 5 llamadas entrantes por minuto. ¿Cuál es la
-					probabilidad de que transcurra hasta un minuto en el momento en que han entrado 2
-					llamadas al conmutador?.
-					La solución a este problema es P (X ≤ 1) = 0.96.
-					(El procedimiento completo lo encontraras en la seccion del ejemplo interactivo)
-                </div>
-                <img src="images/distribuciones gamma.jpg" 
-                class="rounded float-left img-fluid" alt="Responsive image" 
-                style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
-
-            </div>
-            <div class="col">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
+            <div class="col-xl-6">
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                    <div class="accordion" id="accordionExample">
+                    <div class="card tm-bg-black-transparent text-justify">
                         <div class="card-header" id="headingOne">
                           <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" 
+                            <button class="btn btn-link text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseOne" 
                             aria-expanded="false" aria-controls="collapseOne">
-                              Definicion de Distribucion gamma
+                            Definicion de Distribucion gamma
                             </button>
                           </h2>
                         </div>
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
-                            La distribución gamma deriva su nombre de la bien conocida función gamma, que
-							se estudia en muchas áreas de las matemáticas.La variable aleatoria continua X tiene una 
-							distribución gamma, con parámetros α y β, si su función de densidad está dada por:</div>
-							<img src="images/definicion distribucion gamma.jpg" 
-							class="rounded float-left img-fluid" alt="Responsive image" 
-							style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
+                            <small>
+                              La distribución gamma deriva su nombre de la bien conocida función gamma, que
+							                se estudia en muchas áreas de las matemáticas.La variable aleatoria continua X tiene una 
+							                distribución gamma, con parámetros α y β, si su función de densidad está dada por:
+                            </small><br>
+                            <img src="images/definicion distribucion gamma.jpg" 
+                            style="max-height: 470px; max-width: 460px;"
+                            alt="Responsive image"><br>
+                            
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent">
                         <div class="card-header" id="headingTwo">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" 
+                            <button class="btn btn-link collapsed text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseTwo" 
                             aria-expanded="false" aria-controls="collapseTwo">
-                              Media y varianza de la distribucion gamma
+                            Media y varianza de la distribucion gamma
                             </button>
                           </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                           <div class="card-body">
-                            El siguiente teorema proporcionan la media y la varianza de la distribución gamma.
-							Teroema: La media y la varianza de la distribución gamma son
-											  	 μ = αβ y σ<sup><i>2</i></sup> = αβ<sup><i>2</i></sup>.</div>
+                            <small>
+                              El siguiente teorema proporcionan la media y la varianza de la distribución gamma.
+							              Teroema: La media y la varianza de la distribución gamma son
+											  	 μ = αβ y σ<sup><i>2</i></sup> = αβ<sup><i>2</i></sup>.
+                            </small><br>
+                            
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent ">
                         <div class="card-header" id="headingThree">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Ejemplo Interactivo
                             </button>
                           </h2>
@@ -189,71 +437,94 @@
                           Ejemplo Interactivo</div>
                         </div>
                       </div>
-                </div>
+              
+                    </div>
+              </div>    
             </div>
-        </div>
-    </div>
-    <div>
-        <div class="row">
-            <div class="col">
-                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Distribucion chi cuadrada</h1>
-                <div class="card-body">
+          </div>
+          <br><br><br><br><br><br><br>
+          <div class="tm-section-wrap">
+            <section id="5" class="row tm-section">
+              <div class="col-xl-6">
+                <div class="tm-section-half">    
+                                          
+                    <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion chi cuadrada</h2>
+                    <p>
+                      <small>
+                        
                     Al igual que la distribucion exponencial, la distribucion chi cuadrada es un caso especial muy
-					importante de la distribucion gamma en el cual α = v/2 y β = 2, donde v es un entero positivo.
-					A partir de la relación entre la variable aleatoria chi cuadrada y la variable aleatoria gamma, 
-					se puede demostrar que la media de la variable aleatoria chi cuadrada es v y que la varianza es 2v.
-					Dado que α = v/2 y β = 2 usando las formulas de media y varianza de la distribucion gamma:
-					μ = (v/2)*2 = v y σ<sup><i>2</i></sup> = (v/2)*2<sup><i>2</i></sup> = 2v.</div>.
-                <img src="images/funcion gamma.jpg" 
-                class="rounded float-left img-fluid" alt="Responsive image" 
-                style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
-
+                    importante de la distribucion gamma en el cual α = v/2 y β = 2, donde v es un entero positivo.
+                    A partir de la relación entre la variable aleatoria chi cuadrada y la variable aleatoria gamma, 
+                    se puede demostrar que la media de la variable aleatoria chi cuadrada es v y que la varianza es 2v.
+                    Dado que α = v/2 y β = 2 usando las formulas de media y varianza de la distribucion gamma:
+                    μ = (v/2)*2 = v y σ<sup><i>2</i></sup> = (v/2)*2<sup><i>2</i></sup> = 2v.
+                      </small>
+                    </p><br>
+                    <img src="images/distribuciones gamma.jpg" alt="Responsive image"
+                      style="max-width: 460px; max-height: 470px;">
+                    
+                </div>
             </div>
-            <div class="col">
-                <div class="accordion" id="accordionExample">
-                    <div class="card">
+            <div class="col-xl-6">
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                    <div class="accordion" id="accordionExample">
+                    <div class="card tm-bg-black-transparent text-justify">
                         <div class="card-header" id="headingOne">
                           <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" 
+                            <button class="btn btn-link text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseOne" 
                             aria-expanded="false" aria-controls="collapseOne">
-                              Definicion de distribucion chi cuadrada
+                            Definicion de distribucion chi cuadrada
                             </button>
                           </h2>
                         </div>
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
-                            Otro caso especial muy importante de la distribución gamma se obtiene al permitir que
-							α = v/2 y β = 2, donde v es un entero positivo. Este resultado se conoce como distribución 
-							chi cuadrada. La distribución tiene un solo parámetro, v, denominado grados de libertad.
-							La variable aleatoria continua X tiene una distribución chi cuadrada, con v grados de
-							libertad, si su función de densidad es dada por</div>
-							<img src="images/definicion distribucion chi cuadrada.jpg" 
-							class="rounded float-left img-fluid" alt="Responsive image" 
-							style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
+                            <small>
+                              Otro caso especial muy importante de la distribución gamma se obtiene al permitir que
+                              α = v/2 y β = 2, donde v es un entero positivo. Este resultado se conoce como distribución 
+                              chi cuadrada. La distribución tiene un solo parámetro, v, denominado grados de libertad.
+                              La variable aleatoria continua X tiene una distribución chi cuadrada, con v grados de
+                              libertad, si su función de densidad es dada por
+                            </small><br>
+                            <img src="images/definicion distribucion chi cuadrada.jpg" 
+                            style="max-height: 470px; max-width: 460px;"
+                            alt="Responsive image"><br>
+                            <small>
+                              Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
+                              este intervalo y bajo la gráfica de la función de densidad.
+                              La gráfica de f(x) a menudo se conoce como curva de densidad.
+                            </small>
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent">
                         <div class="card-header" id="headingTwo">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" 
+                            <button class="btn btn-link collapsed text-success" type="button" 
                             data-toggle="collapse" data-target="#collapseTwo" 
                             aria-expanded="false" aria-controls="collapseTwo">
-                              Media y varianza de la distribucion chi cuadrada
+                            Media y varianza de la distribucion chi cuadrada
                             </button>
                           </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                           <div class="card-body">
-                            La media y la varianza de la distribución chi cuadrada son
-							μ = v y σ<sup><i>2</i></sup>= 2v.</div>
+                            <small>
+                              La media y la varianza de la distribución chi cuadrada son
+							μ = v y σ<sup><i>2</i></sup>= 2v.
+                            </small><br>
+                            
+                          </div>
                         </div>
                       </div>
-                      <div class="card">
+                      <div class="card tm-bg-black-transparent ">
                         <div class="card-header" id="headingThree">
                           <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Ejemplo Interactivo
                             </button>
                           </h2>
@@ -263,12 +534,24 @@
                           Ejemplo Interactivo</div>
                         </div>
                       </div>
-                </div>
+              
+                    </div>
+              </div>    
             </div>
-        </div>
+          </div>
+
     </div>
-   
-</div>
-    
+    <div>
+        
+          
+          
+      </main>        
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  
+  <script src="js/navs.js"></script>
 </body>
 </html>
