@@ -120,12 +120,18 @@
     <div>
         <div class="row">
             <div class="col">
-                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Variable Continua</h1>
+                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Distribucion Gamma</h1>
                 <div class="card-body">
-                    La distribución normal continua puede describir la distribución del peso de hombres adultos. 
-                    Por ejemplo, usted puede calcular la probabilidad de que un hombre pese entre 160 y 170 libras.
+                    La distribución Gamma sirve para calcular la probabilidad de ciertos eventos en experimentos que 
+					siguen un proceso de Poisson. 
+                    Por ejemplo, Suponga que las llamadas telefónicas que llegan a un conmutador particular siguen un
+					proceso de Poisson con un promedio de 5 llamadas entrantes por minuto. ¿Cuál es la
+					probabilidad de que transcurra hasta un minuto en el momento en que han entrado 2
+					llamadas al conmutador?.
+					La solución a este problema es P (X ≤ 1) = 0.96.
+					(El procedimiento completo lo encontraras en la seccion del ejemplo interactivo)
                 </div>
-                <img src="images/distribucion continua.jpg" 
+                <img src="images/distribuciones gamma.jpg" 
                 class="rounded float-left img-fluid" alt="Responsive image" 
                 style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
 
@@ -138,21 +144,19 @@
                             <button class="btn btn-link" type="button" 
                             data-toggle="collapse" data-target="#collapseOne" 
                             aria-expanded="false" aria-controls="collapseOne">
-                              Definicion de Variable Continua
+                              Definicion de Distribucion gamma
                             </button>
                           </h2>
                         </div>
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una variable continua es aquella que puede adoptar cualquier valor 
-                            en el marco de un intervalo que ya está predeterminado. Entre dos de los valores,
-                            siempre puede existir otro valor intermedio, susceptible de ser tomado como valor
-                            por la variable continua.
-                            Estas particularidades diferencian a la variable continua de la variable discreta, 
-                            que solo puede adquirir un valor de un conjunto de números. Existen separaciones
-                            entre los valores sucesivos que pueden observarse: es decir, que no se “llenan” 
-                            con otros valores intermedios.</div>
+                            La distribución gamma deriva su nombre de la bien conocida función gamma, que
+							se estudia en muchas áreas de las matemáticas.La variable aleatoria continua X tiene una 
+							distribución gamma, con parámetros α y β, si su función de densidad está dada por:</div>
+							<img src="images/definicion distribucion gamma.jpg" 
+							class="rounded float-left img-fluid" alt="Responsive image" 
+							style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
                         </div>
                       </div>
                       <div class="card">
@@ -161,20 +165,15 @@
                             <button class="btn btn-link collapsed" type="button" 
                             data-toggle="collapse" data-target="#collapseTwo" 
                             aria-expanded="false" aria-controls="collapseTwo">
-                              Definicion distribucion de variable continua
+                              Media y varianza de la distribucion gamma
                             </button>
                           </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una distribución continua describe las probabilidades de los posibles valores de una variable aleatoria continua. 
-                            Una variable aleatoria continua es una variable aleatoria con un conjunto de valores posibles
-                             (conocido como el rango) que es infinito y no se puede contar.
-
-                            Las probabilidades de las variables aleatorias continuas (X) se definen como el área
-                             por debajo de la curva de su PDF. Por lo tanto, solo los rangos de valores pueden tener 
-                             una probabilidad diferente de cero. La probabilidad de que una variable aleatoria continua 
-                             equivalga a algún valor siempre es cero.</div>
+                            El siguiente teorema proporcionan la media y la varianza de la distribución gamma.
+							Teroema: La media y la varianza de la distribución gamma son
+											  	 μ = αβ y σ<sup><i>2</i></sup> = αβ<sup><i>2</i></sup>.</div>
                         </div>
                       </div>
                       <div class="card">
@@ -197,12 +196,15 @@
     <div>
         <div class="row">
             <div class="col">
-                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Variable Continua</h1>
+                <h1 class="display-5" style="margin-left: 10px; margin-top: 10px;">Distribucion chi cuadrada</h1>
                 <div class="card-body">
-                    La distribución normal continua puede describir la distribución del peso de hombres adultos. 
-                    Por ejemplo, usted puede calcular la probabilidad de que un hombre pese entre 160 y 170 libras.
-                </div>
-                <img src="images/distribucion continua.jpg" 
+                    Al igual que la distribucion exponencial, la distribucion chi cuadrada es un caso especial muy
+					importante de la distribucion gamma en el cual α = v/2 y β = 2, donde v es un entero positivo.
+					A partir de la relación entre la variable aleatoria chi cuadrada y la variable aleatoria gamma, 
+					se puede demostrar que la media de la variable aleatoria chi cuadrada es v y que la varianza es 2v.
+					Dado que α = v/2 y β = 2 usando las formulas de media y varianza de la distribucion gamma:
+					μ = (v/2)*2 = v y σ<sup><i>2</i></sup> = (v/2)*2<sup><i>2</i></sup> = 2v.</div>.
+                <img src="images/funcion gamma.jpg" 
                 class="rounded float-left img-fluid" alt="Responsive image" 
                 style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
 
@@ -215,21 +217,21 @@
                             <button class="btn btn-link" type="button" 
                             data-toggle="collapse" data-target="#collapseOne" 
                             aria-expanded="false" aria-controls="collapseOne">
-                              Definicion de Variable Continua
+                              Definicion de distribucion chi cuadrada
                             </button>
                           </h2>
                         </div>
                     
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una variable continua es aquella que puede adoptar cualquier valor 
-                            en el marco de un intervalo que ya está predeterminado. Entre dos de los valores,
-                            siempre puede existir otro valor intermedio, susceptible de ser tomado como valor
-                            por la variable continua.
-                            Estas particularidades diferencian a la variable continua de la variable discreta, 
-                            que solo puede adquirir un valor de un conjunto de números. Existen separaciones
-                            entre los valores sucesivos que pueden observarse: es decir, que no se “llenan” 
-                            con otros valores intermedios.</div>
+                            Otro caso especial muy importante de la distribución gamma se obtiene al permitir que
+							α = v/2 y β = 2, donde v es un entero positivo. Este resultado se conoce como distribución 
+							chi cuadrada. La distribución tiene un solo parámetro, v, denominado grados de libertad.
+							La variable aleatoria continua X tiene una distribución chi cuadrada, con v grados de
+							libertad, si su función de densidad es dada por</div>
+							<img src="images/definicion distribucion chi cuadrada.jpg" 
+							class="rounded float-left img-fluid" alt="Responsive image" 
+							style="max-width: 460px; max-height: 470px; margin-top: 10px; margin-left: 5%;">
                         </div>
                       </div>
                       <div class="card">
@@ -238,20 +240,14 @@
                             <button class="btn btn-link collapsed" type="button" 
                             data-toggle="collapse" data-target="#collapseTwo" 
                             aria-expanded="false" aria-controls="collapseTwo">
-                              Definicion distribucion de variable continua
+                              Media y varianza de la distribucion chi cuadrada
                             </button>
                           </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                           <div class="card-body">
-                            Una distribución continua describe las probabilidades de los posibles valores de una variable aleatoria continua. 
-                            Una variable aleatoria continua es una variable aleatoria con un conjunto de valores posibles
-                             (conocido como el rango) que es infinito y no se puede contar.
-
-                            Las probabilidades de las variables aleatorias continuas (X) se definen como el área
-                             por debajo de la curva de su PDF. Por lo tanto, solo los rangos de valores pueden tener 
-                             una probabilidad diferente de cero. La probabilidad de que una variable aleatoria continua 
-                             equivalga a algún valor siempre es cero.</div>
+                            La media y la varianza de la distribución chi cuadrada son
+							μ = v y σ<sup><i>2</i></sup>= 2v.</div>
                         </div>
                       </div>
                       <div class="card">
