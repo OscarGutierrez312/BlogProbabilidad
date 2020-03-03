@@ -30,7 +30,7 @@
             Funciones de Distribución de Variable Continua
           </h1>
         </div>
-      
+        
         <ul id="tmMainNav" class="nav flex-column text-uppercase text-left tm-main-nav">
           <li class="nav-item">
             <a href="#1" class="nav-link active">
@@ -49,12 +49,12 @@
           </li>
           <li class="nav-item">
             <a href="#4" class="nav-link">
-              <span class="d-inline-block mr-3">Distribucion Gama</span>
+              <span class="d-inline-block mr-3 ">Distribucion Gamma</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#5" class="nav-link">
-              <span class="d-inline-block mr-3">Distribucion Ji Cuadrada</span>
+              <span class="d-inline-block mr-3">Distribucion Chi Cuadrada</span>
             </a>
           </li>
           <li class="nav-item">
@@ -69,7 +69,7 @@
           </li>
           <li class="nav-item">
             <a href="#8" class="nav-link">
-              <span class="d-inline-block mr-3">Distribucion beta</span>
+              <!--<span class="d-inline-block mr-3">Distribucion beta</span>-->
             </a>
           </li>
         </ul>
@@ -84,6 +84,379 @@
               <div class="tm-section-half text-justify">    
                                         
                 <h2 class="tm-section-title tm-color-primary font-italic mb-4">Funciones de Densidad</h2>
+                <h5><b>Ejemplo :</b></h5>
+                <p>                      
+                  La cantidad de horas en las que un vehiculo tarda en atravesar una 
+                  autopista de 1 km en un recorrido rectilíneo, esta descrita por la <b>variable aleatoria X</b>, 
+                  con función de densidad:
+                </p> 
+                <img src="images/F_Densidad/funDens.jpg" width="250px" height="100px">
+                <p>
+                  Calcule la probabilidad de que el vehiculo:
+                  
+                </p>
+                <p>
+                  <ol type="a">
+                    <li class="subitems">tarde 12 minutos.</li>
+                    <li class="subitems">tarde entre 10 y 20 minutos.</li>
+                  </ol>
+                </p>
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.131)
+                  </cite>
+                </blockquote>  
+                  
+              </div>
+            </div>
+            
+          </section>
+          <section  class="row tm-section">
+            <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol type="a">
+                    <li>
+                      <ol>
+                        <li>Se plantean las siguientes integrales:</li>
+                        <img src="images/F_Densidad/Paso 1.png" style="margin-bottom: 30px;">
+                        <li>Evaluar las integrales y operar:</li>
+                        <img src="images/F_Densidad/Paso 2.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.68</li>
+                        <p>La probabilidad de que tarde 12 minutos es de 68%</p>
+                        
+                      </ol>
+                    </li>
+                    <li>
+                      <ol>
+                        <li>Se plantea la siguiente integral:</li>
+                        <img src="images/F_Densidad/Paso 3.png" style="margin-bottom: 30px;">
+                        <li>Evaluar la integral y operar:</li>
+                        <img src="images/F_Densidad/Paso 4.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.375</li>
+                        <p>La probabilidad de que tarde entre 10 y 20 minutos es de 37.5%</p>
+                      </ol>
+                    </li>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos</h2>
+                <ol type="a">
+                  <li>
+                    <ol>
+                      <li>Por definición de distribucion de probabilidad:</li>
+                      <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
+                      <li>Por Teorema Fundamental del Calculo para integrales definidas:</li>
+                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 30px;"> 
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>Por definición de distribucion de probabilidad:</li>
+                      <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
+                      <li>Por Teorema Fundamental del Calculo para integrales definidas:</li>
+                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 30px;"> 
+                    </ol>
+                  </li>
+                </ol>
+            </div>
+          </section>
+        </div>
+        
+        <div class="tm-section-wrap" id="2">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">    
+                                        
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Normal</h2>
+                <h5><b>Ejemplo :</b></h5>
+                <p>                      
+                  Una fabrica de madera reparte soportes a las tiendas locales y tienen una 
+                  longitud promedio de 30 centímetros y una desviación estándar de 2 centímetros. Si se 
+                  supone que las longitudes están distribuidas normalmente, ¿qué porcentaje de las barras son:
+                </p> 
+                
+                <p>
+                  <ol type="a">
+                    <li class="subitems">más largas que 31.7 centímetros? </li>
+                    <li class="subitems">de entre 29.3 y 33.5 centímetros de longitud? </li>
+                    <li class="subitems">más cortas que 25.5 centímetros?</li>
+                  </ol>
+                </p>
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejercicio 6.12 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.186)
+                  </cite>
+                </blockquote>  
+                  
+              </div>
+            </div>
+            
+          </section>
+          <section  class="row tm-section">
+            <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol type="a">
+                    <li>
+                      <ol>
+                        <li>Primero buscamos el porcentaje de barras superior a 31,7 cm, 
+                          por medio de la fórmula de distribución normal estándar donde:</li>
+                        <img src="images/D_Normal/Paso 1.png" style="margin-bottom: 30px; margin-top: 10px;">
+                        <li>Se aplican propiedades de variable aleatoria y se opera:</li>
+                        <img src="images/D_Normal/Paso2.1.png" >
+                        <img src="images/D_Normal/Paso2.2.png" >
+                        <img src="images/D_Normal/Paso2.3.png" ><br>
+                        <img src="images/D_Normal/Paso2.4.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.1977</li>
+                        <p>La probabilidad de que las barras sean mas largas de 31.7 centimetros es de 19.77%</p>
+
+                      </ol>
+                    </li>
+                    <li>
+                      <ol>
+                        <li>Del mismo modo determinamos el porcentaje de barras que se encuentran entre 29.3 y 33.5 cm:</li>
+                        <img src="images/D_Normal/Paso3.png" style="margin-bottom: 30px; margin-top: 10px;">
+                        <img src="images/D_Normal/Paso5.png" style="margin-bottom: 30px; margin-top: 10px;">
+                        <li>Se aplican propiedades de variable aleatoria y se opera:</li>
+                        <img src="images/D_Normal/Paso4.1.png" >
+                        <img src="images/D_Normal/Paso4.2.png" >
+                        <img src="images/D_Normal/Paso4.3.png" >
+                        <img src="images/D_Normal/Paso4.4.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.5967</li>
+                        <p>La probabilidad de que las barras 29.3 y 33.5 centimetros es de 59.67%</p>
+                      </ol>
+                    </li>
+                    <li>
+                      <ol>
+                        <li>Finalmente calculamos el porcentaje de barras de diámetro menor a 25.5:</li>
+                        <img src="images/D_Normal/Paso7.png" style="margin-bottom: 30px; margin-top: 10px;">
+                        <li>Se aplican propiedades de variable aleatoria y se opera:</li>
+                        <img src="images/D_Normal/Paso7.1.png" >
+                        <img src="images/D_Normal/Paso7.2.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.122</li>
+                        <p>La probabilidad de que las barras sea menor de 25.5 centimetros es de 12.2%</p>
+                      </ol>
+                    </li>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
+                <ol type="a">
+                  <li>
+                    <ol>
+                      <li>
+                        Z Se interpreta como el número de desviaciones estándar que están comprendidas entre el promedio y un cierto valor de variable x
+                        µ = Es la media de la distribución normal <br>
+                        σ= Es la desviación típica 
+                        </li>
+                      <li>Por definición de distribución normal:</li>
+                      <img src="images/D_Normal/DIstNorm.jpg" style="margin-bottom: 220px;">
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>
+                        Z Se interpreta como el número de desviaciones estándar que están comprendidas entre el promedio y un cierto valor de variable x
+                        µ = Es la media de la distribución normal <br>
+                        σ= Es la desviación típica 
+                        </li>
+                        <li>Por definición de distribución normal:</li>
+                      <img src="images/D_Normal/DIstNorm.jpg" style="margin-bottom: 200px;">
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>
+                        Z Se interpreta como el número de desviaciones estándar que están comprendidas entre el promedio y un cierto valor de variable x
+                        µ = Es la media de la distribución normal <br>
+                        σ= Es la desviación típica 
+                        </li>
+                        <li>Por definición de distribución normal:</li>
+                        <img src="images/D_Normal/DIstNorm.jpg" style="margin-bottom: 50px;">
+                    </ol>
+                  </li>
+                </ol>
+            </div>
+          </section>
+        </div>
+
+        <div class="tm-section-wrap" id="3">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">    
+                                        
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Exponencial</h2>
+                <h5><b>Ejemplo :</b></h5>
+                <p>                      
+                  La cantidad de horas en las que un vehiculo tarda en atravesar una 
+                  autopista de 1 km en un recorrido rectilíneo, esta descrita por la <b>variable aleatoria X</b>, 
+                  con función de densidad:
+                </p> 
+                <img src="images/F_Densidad/funDens.jpg" width="250px" height="100px">
+                <p>
+                  Calcule la probabilidad de que el vehiculo:
+                  
+                </p>
+                <p>
+                  <ol type="a">
+                    <li class="subitems">tarde 12 minutos.</li>
+                    <li class="subitems">tarde entre 10 y 20 minutos.</li>
+                  </ol>
+                </p>
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.131)
+                  </cite>
+                </blockquote>  
+                  
+              </div>
+            </div>
+            
+          </section>
+          <section  class="row tm-section">
+            <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol type="a">
+                    <li>
+                      <ol>
+                        <li>Se plantean las siguientes integrales:</li>
+                        <img src="images/F_Densidad/Paso 1.png" style="margin-bottom: 30px;">
+                        <li>Evaluar las integrales y operar:</li>
+                        <img src="images/F_Densidad/Paso 2.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.68</li>
+                        <p>La probabilidad de que tarde 12 minutos es de 68%</p>
+                        
+                      </ol>
+                    </li>
+                    <li>
+                      <ol>
+                        <li>Se plantea la siguiente integral:</li>
+                        <img src="images/F_Densidad/Paso 3.png" style="margin-bottom: 30px;">
+                        <li>Evaluar la integral y operar:</li>
+                        <img src="images/F_Densidad/Paso 4.png" style="margin-bottom: 30px;">
+                        <li>El resultado es: 0.375</li>
+                        <p>La probabilidad de que tarde entre 10 y 20 minutos es de 37.5%</p>
+                      </ol>
+                    </li>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos</h2>
+                <ol type="a">
+                  <li>
+                    <ol>
+                      <li>Por definición de distribucion de probabilidad:</li>
+                      <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
+                      <li>Por Teorema Fundamental del Calculo para integrales definidas:</li>
+                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 30px;"> 
+                    </ol>
+                  </li>
+                  <li>
+                    <ol>
+                      <li>Por definición de distribucion de probabilidad:</li>
+                      <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
+                      <li>Por Teorema Fundamental del Calculo para integrales definidas:</li>
+                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 30px;"> 
+                    </ol>
+                  </li>
+                </ol>
+            </div>
+          </section>
+        </div>
+      
+        <div class="tm-section-wrap" id="4">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">    
+                                        
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Gamma</h2>
+                <h5><b>Ejemplo :</b></h5>
+                <img src="images/asesor de callcenter.jpg" alt="Responsive image"
+                    style="max-width: 460px; max-height: 470px;">
+                <p>                      
+                  La distribución Gamma sirve para calcular la probabilidad de ciertos eventos en experimentos que 
+                  siguen un proceso de Poisson. 
+                  Por ejemplo, Suponga que las llamadas telefónicas que llegan a un asesor de call center
+								  particular siguen un proceso de Poisson con un promedio de 5 llamadas entrantes por minuto. ¿Cuál es la
+                  probabilidad de que transcurra hasta un minuto en el momento en que han entrado 2
+                  llamadas al asesor?.
+                  
+                </p> 
+                
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejemplo 6.18 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.198)
+                  </cite>
+                </blockquote>  
+                  
+              </div>
+            </div>
+            
+          </section>
+          <section  class="row tm-section">
+            <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol>
+                   <li>Se aplica un proceso de Poisson, con un lapso de tiempo hasta que ocurren 2 eventos de Poisson</li>
+                   <li>Se plantea una distribucion gamma con:</li>
+                   <li>La probabilidad que se requiere esta dada por: </li>
+                   <li>El resultado es: 0.96</li>
+                   <p>La probabilidad de que transcurra 1 minuto en el momento en que entraron 2 llamadas es de 96%</p>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos</h2>
+                <ol >
+                  
+                </ol>
+            </div>
+          </section>
+        </div>
+
+        <div class="tm-section-wrap" id="5">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Chi Cuadrada</h2>
+                
+                <iframe src="https://docs.google.com/spreadsheets/d/1lQd0A39z5tbTZgRi_cE3Ol9PggTeyR0s31Wamz2Oe68/edit?usp=sharing"
+                width="1050px"
+                height="500px"
+                ></iframe>
+                 
+                 <!--                     
+                
                 <h5><b>Ejemplo :</b></h5>
                 <p>                      
                   La cantidad de minutos en las que un vehiculo tarda en atravesar una 
@@ -101,9 +474,10 @@
                     <li class="subitems">tarde entre 10 y 20 minutos.</li>
                   </ol>
                 </p>
+              -->
                 <blockquote> 
                   <cite>
-                      Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2012).
+                      Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
                       Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.131)
                   </cite>
                 </blockquote>  
@@ -133,373 +507,123 @@
                   <li>Argumento 1</li>
                   <li>Argumento 2</li>
                 </ol>
-                <!-- 
-                    <div class="accordion" id="accordionExample">
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseOne" 
-                            aria-expanded="false" aria-controls="collapseOne">
-                              Definición
-                            </button>
-                          </h2>
-                        </div>
-                    
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              Sea X una variable aleatoria continua. Entonces, una distribución de probabilidad o
-                              función de densidad de probabilidad (fdp) de X es una función f(x) tal que para dos
-                              números cualesquiera a y b con a menor o igual a b,
-                            </small><br>
-                            <img src="images/DefDist.jpg" alt="Responsive image"><br>
-                            <small>
-                              Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
-                              este intervalo y bajo la gráfica de la función de densidad.
-                              La gráfica de f(x) a menudo se conoce como curva de densidad.
-                            </small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseTwo" 
-                            aria-expanded="false" aria-controls="collapseTwo">
-                              Definición Distribución Uniforme
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              Se dice que una variable aleatoria continua X tiene una distribución uniforme
-                                en el intervalo [A, B] si la función de densidad de probabilidad de X es
-                            </small><br>
-                            <img src="images/DefUni.jpg" alt="Responsive image">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Ejemplo Interactivo
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                          Ejemplo Interactivo</div>
-                        </div>
-                      </div>
-              
-                    </div>
-              </div>
-            -->    
+               
             </div>
           </section>
         </div>
-        
-        <div class="tm-section-wrap">
-          <section id="2" class="row tm-section">
-            <div class="col-xl-6">
-              <div class="tm-section-half">    
+
+        <div class="tm-section-wrap" id="6">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">    
                                         
-                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion Normal</h2>
-                  <p>
-                    <small>
-                      La cantidad de agua destilada despachada por una cierta máquina está normalmente distribuida 
-                      con valor medio de 64 oz y desviación estándar de 0.78 oz. ¿Qué tamaño de contenedor c 
-                      asegurará que ocurra rebosamiento sólo 0.5% del tiempo? Si X denota la cantidad
-                      despachada, la condición deseada es que P(X ≤ c)  0.005, o, en forma equivalente, que
-                      P(X ≤ c)  0.995. Por lo tanto, c es el 99.5o percentil de la distribución normal con ≤  64
-                      y ≤  0.78. El 99.5 o percentil de la distribución normal estándar es de 2.58, por lo tanto,
-                      c  ≤(0.995)  64 ≤ (2.58)(0.78)  64 ≤ 2.0  66 oz
-                    </small>
-                    <br><br>
-                    <small> 
-                      Adaptado del Ejercicio 5.3 Propuesto por Devore Jay 7ma Edición (2008).
-                      Probabilidad y Estadistica para ingenieria y Ciencias, Mexico D.F. Cengage Learning
-                      P.135
-                    </small>
-                  </p>
-                  
-              </div>
-            </div>
-            <div class="col-xl-6">
-              <div class="tm-section-half">
-                  
-                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
-                  <div class="accordion" id="accordionExample">
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseOne" 
-                            aria-expanded="false" aria-controls="collapseOne">
-                              Definición
-                            </button>
-                          </h2>
-                        </div>
-                    
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              
-                            </small><br>
-                            <img src="images/DIstNorm.jpg" alt="Responsive image"><br>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseTwo" 
-                            aria-expanded="false" aria-controls="collapseTwo">
-                              Definición Distribución Normal
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              Se dice que una variable aleatoria continua X tiene una distribución uniforme
-                                en el intervalo [A, B] si la función de densidad de probabilidad de X es
-                            </small><br>
-                            <img src="images/DefUni.jpg" alt="Responsive image">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Ejemplo Interactivo
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                          <a href="https://docs.google.com/spreadsheets/d/1RoddWyO41lNKxWpIfZqjJDY7mE9BM5W_VZ6vUTFAC2M/edit#gid=0">Ejemplo</a>
-                        </div>
-                      </div>
-              
-                      </div>
-                  </div>    
-              </div>
-            </div>
-          </section>
-        </div>
-      
-        <div class="tm-section-wrap">
-          <section id="3" class="row tm-section">
-            <div class="col-xl-6">
-              <div class="tm-section-half">    
-                                        
-                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion Exponencial</h2>
-                  <p>
-                    <small>
-                      Suponga que el tiempo de respuesta X en una terminal de computadora en línea (el tiempo
-                      transcurrido entre el final de la consulta de un usuario y el inicio 
-                      de la respuesta del sistema a dicha consulta) tiene una distribución exponencial 
-                      con tiempo de respuesta esperado de 5 s. Entonces E(X)  1/6  5, por lo tanto ≤  0.2. 
-                      La probabilidad de que el tiempo de respuesta sea cuando mucho de 10 s es 
-                      P(X ≤ 10)  F(10; 0.2)  1 ≤ (0.2)(10)  
-                      La probabilidad de que el tiempo de respuesta sea de entre 5 y 10 s es 
-                      P(5 ≤ X ≤ 10)  F(10; 0.2) ≤ F(5; 0.2)  (1 ≤ e2)  (1 ≤ e1)  0.233
-                    </small>
-                    <br><br>
-                    <small> 
-                      Adaptado del Ejemplo 6.18 Propuesto por Walpole, Myers R, 8va Edición (2007).
-                      Probabilidad y Estadistica para ingenieria y Ciencias, Mexico D.F. Pearson
-                      P.198
-                    </small>
-                  </p>
-                  
-              </div>
-            </div>
-            <div class="col-xl-6">
-            <div class="tm-section-half">
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Weibull</h2>
+                <h5><b>Ejemplo :</b></h5>
                 
-              <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
-                  <div class="accordion" id="accordionExample">
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link text-success" type="button" 
-                          data-toggle="collapse" data-target="#collapseOne" 
-                          aria-expanded="false" aria-controls="collapseOne">
-                            Definición
-                          </button>
-                        </h2>
-                      </div>
+                <p>                      
+                  Suponga que la vida de servicio de la batería de un auxiliar auditivo, en años, es una variable aleatoria que tiene una distribución de Weibull con α =1/2 y β = 2.
+                  ¿Cuánto tiempo se puede esperar que dure tal batería?
+
                   
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <small>
-                            Sea X una variable aleatoria continua. Entonces, una distribución de probabilidad o
-                            función de densidad de probabilidad (fdp) de X es una función f(x) tal que para dos
-                            números cualesquiera a y b con a menor o igual a b,
-                          </small><br>
-                          <img src="images/DefDist.jpg" alt="Responsive image"><br>
-                          <small>
-                            Es decir, la probabilidad de que X asuma un valor en el intervalo [a, b] es el área sobre
-                            este intervalo y bajo la gráfica de la función de densidad.
-                            La gráfica de f(x) a menudo se conoce como curva de densidad.
-                          </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed text-success" type="button" 
-                          data-toggle="collapse" data-target="#collapseTwo" 
-                          aria-expanded="false" aria-controls="collapseTwo">
-                            Definición Distribución Uniforme
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <small>
-                            Se dice que una variable aleatoria continua X tiene una distribución uniforme
-                              en el intervalo [A, B] si la función de densidad de probabilidad de X es
-                          </small><br>
-                          <img src="images/DefUni.jpg" alt="Responsive image">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Ejemplo Interactivo
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                        Ejemplo Interactivo</div>
-                      </div>
-                    </div>
-            
-                  </div>
-            </div>    
-            </div>
-        </div>
-      
-        <div class="tm-section-wrap">
-          <section id="4" class="row tm-section">
-            <div class="col-xl-6">
-              <div class="tm-section-half">    
-                                        
-                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion Gamma</h2>
-                  <p>
-                    <small>
-                      
-                      La distribución Gamma sirve para calcular la probabilidad de ciertos eventos en experimentos que 
-                      siguen un proceso de Poisson. 
-                                Por ejemplo, Suponga que las llamadas telefónicas que llegan a un asesor de call center
-								particular siguen un
-                      proceso de Poisson con un promedio de 5 llamadas entrantes por minuto. ¿Cuál es la
-                      probabilidad de que transcurra hasta un minuto en el momento en que han entrado 2
-                      llamadas al asesor?.
-                      La solución a este problema es P (X ≤ 1) = 0.96.
-                      (El procedimiento completo lo encontraras en la seccion del ejemplo interactivo)
-                    </small><br>
-                    <img src="images/asesor de callcenter.jpg" alt="Responsive image"
-                    style="max-width: 460px; max-height: 470px;">
-                    <br><br>
-                    <small> 
-                      Adaptado del Ejemplo 6.18 Propuesto por Walpole, Myers R, 8va Edición (2007).
-                      Probabilidad y Estadistica para ingenieria y Ciencias, Mexico D.F. Pearson
-                      P.198
-                    </small>
-                  </p>
+                </p> 
+                
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejercicio 6.47 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.206)
+                  </cite>
+                </blockquote>  
                   
               </div>
             </div>
+            
+          </section>
+          <section  class="row tm-section">
             <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol>
+                   <li>Se aplica un proceso de Poisson, con un lapso de tiempo hasta que ocurren 2 eventos de Poisson</li>
+                   <li>Se plantea una distribucion gamma con:</li>
+                   <li>La probabilidad que se requiere esta dada por: </li>
+                   <li>El resultado es: 0.96</li>
+                   <p>La probabilidad de que transcurra 1 minuto en el momento en que entraron 2 llamadas es de 96%</p>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
               <div class="tm-section-half">
                   
-                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
-                    <div class="accordion" id="accordionExample">
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingOne">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseOne" 
-                            aria-expanded="false" aria-controls="collapseOne">
-                            Definicion de Distribucion gamma
-                            </button>
-                          </h2>
-                        </div>
-                    
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              La distribución gamma deriva su nombre de la bien conocida función gamma, que
-                              se estudia en muchas áreas de las matemáticas.La variable aleatoria continua X tiene una 
-                              distribución gamma, con parámetros α y β, si su función de densidad está dada por:
-                            </small><br>
-                            <img src="images/definicion distribucion gamma.jpg" 
-                            style="max-height: 470px; max-width: 460px;"
-                            alt="Responsive image"><br>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingTwo">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" 
-                            data-toggle="collapse" data-target="#collapseTwo" 
-                            aria-expanded="false" aria-controls="collapseTwo">
-                            Media y varianza de la distribucion gamma
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                            <small>
-                              El siguiente teorema proporcionan la media y la varianza de la distribución gamma.
-                            Teroema: La media y la varianza de la distribución gamma son
-                            μ = αβ y σ<sup><i>2</i></sup> = αβ<sup><i>2</i></sup>.
-                            </small><br>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card text-justify">
-                        <div class="card-header" id="headingThree">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Ejemplo Interactivo
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                          Ejemplo Interactivo</div>
-                        </div>
-                      </div>
-                    </div>
-              </div>    
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos</h2>
+                <ol >
+                  
+                </ol>
             </div>
           </section>
         </div>
-      
-        <div class="tm-section-wrap">
-          <section id="5" class="row tm-section">
+
+        <div class="tm-section-wrap" id="7">
+          <section  class="row tm-section">
+            <div class="s-header">
+              <div class="tm-section-half text-justify">    
+                                        
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Logaritmica Normal</h2>
+                <h5><b>Ejemplo :</b></h5>
+                
+                <p>                      
+                  Los datos de frecuencia a menudo tienen una distribución logarítmica normal. 
+                  Se estudia el uso promedio de potencia (dB por hora) para una empresa específica y se sabe que tiene una 
+                  distribución logarítmica normal con parámetros μ = 4 y σ = 2. ¿Cuál es la probabilidad de que la empresa utilice 
+                  más de 270 dB durante cualquier hora particular?
+                  
+                </p> 
+                
+                <blockquote> 
+                  <cite>
+                      Adaptado del Ejemplo 6.56 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.207)
+                  </cite>
+                </blockquote>  
+                  
+              </div>
+            </div>
+            
+          </section>
+          <section  class="row tm-section">
+            <div class="col-xl-6">
+              <div class="tm-section-half text-justify">    
+                                        
+                  <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
+                  <ol>
+                   <li>Se aplica un proceso de Poisson, con un lapso de tiempo hasta que ocurren 2 eventos de Poisson</li>
+                   <li>Se plantea una distribucion gamma con:</li>
+                   <li>La probabilidad que se requiere esta dada por: </li>
+                   <li>El resultado es: 0.96</li>
+                   <p>La probabilidad de que transcurra 1 minuto en el momento en que entraron 2 llamadas es de 96%</p>
+                  </ol>
+                                  
+              </div>
+            </div>
+            <div class="col-xl-6">
+            
+              <div class="tm-section-half">
+                  
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos</h2>
+                <ol >
+                  
+                </ol>
+            </div>
+          </section>
+        </div>
+        <!--
+        <div class="tm-section-wrap" >
+          <section  class="row tm-section">
             <div class="col-xl-6">
               <div class="tm-section-half">    
-                                        
+                                      
                   <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribucion chi cuadrada</h2>
                   <p>
                     <small>
@@ -520,81 +644,19 @@
                       Probabilidad y Estadistica para ingenieria y Ciencias, Mexico D.F. Cengage Learning
                       P.209
                     </small>
+                    
               </div>
             </div>
             <div class="col-xl-6">
             <div class="tm-section-half">
                 
               <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos y Ejemplos</h2>
-                  <div class="accordion" id="accordionExample">
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link text-success" type="button" 
-                          data-toggle="collapse" data-target="#collapseOne" 
-                          aria-expanded="false" aria-controls="collapseOne">
-                          Definicion de distribucion chi cuadrada
-                          </button>
-                        </h2>
-                      </div>
                   
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <small>
-                            Otro caso especial muy importante de la distribución gamma se obtiene al permitir que
-                            α = v/2 y β = 2, donde v es un entero positivo. Este resultado se conoce como distribución 
-                            chi cuadrada. La distribución tiene un solo parámetro, v, denominado grados de libertad.
-                            La variable aleatoria continua X tiene una distribución chi cuadrada, con v grados de
-                            libertad, si su función de densidad es dada por
-                          </small><br>
-                          <img src="images/definicion distribucion chi cuadrada.jpg" 
-                          style="max-height: 470px; max-width: 460px;"
-                          alt="Responsive image"><br>
-                          <small>
-                            
-                          </small>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed text-success" type="button" 
-                          data-toggle="collapse" data-target="#collapseTwo" 
-                          aria-expanded="false" aria-controls="collapseTwo">
-                          Media y varianza de la distribucion chi cuadrada
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                          <small>
-                            La media y la varianza de la distribución chi cuadrada son
-            μ = v y σ<sup><i>2</i></sup>= 2v.
-                          </small><br>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card text-justify">
-                      <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link collapsed text-success" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Ejemplo Interactivo
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                        Ejemplo Interactivo</div>
-                      </div>
-                    </div>
-            
-                  </div>
             </div>    
             </div>
           </section>
         </div>
+      -->
         
       </main>
     </div>
