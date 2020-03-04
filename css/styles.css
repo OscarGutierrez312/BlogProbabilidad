@@ -71,7 +71,7 @@ body {
   }
   
   .tm-bg-black-transparent {
-    /*background-color: rgba(0, 0, 0, 0.733);*/
+    
      
     background: rgba(251,223,147,1);
     background: -moz-linear-gradient(top, rgba(251,223,147,1) 0%, rgba(248,181,0,1) 49%, rgba(250,77,121,1) 50%, rgba(207,6,6,1) 98%, rgba(252,234,187,1) 100%);
@@ -139,7 +139,7 @@ body {
     width: 100%;
     max-width: 230px;
     min-height: 160px;
-    color: rgb(0, 0, 0);
+    color: rgb(5, 5, 5);
     text-align: left;
     margin-left: 9%;
 }
@@ -159,7 +159,14 @@ body {
   .tm-brand {
     padding: 1px;
   }
-  
+  .conc{
+    color:blue;
+    line-height: 17px;
+  }
+
+  .resp{
+    color:red;
+  }
   .tm-sidebar {
     position: fixed;
     top: 0;
@@ -179,7 +186,9 @@ body {
   }
   
   .tm-main-nav > li > a {
+    font-weight: bolder;
     color: rgb(0, 0, 0);
+    font-size: 0.8rem;
   }
   
   .tm-main-nav {
