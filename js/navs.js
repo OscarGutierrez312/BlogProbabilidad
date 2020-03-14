@@ -14,9 +14,12 @@ $(document).ready(function() {
         if (!sidebar.contains(e.target)) {
           $(".tm-sidebar").removeClass("show");
         }
+        
       });
-    
       $("#tmMainNav .nav-link").click(function(e) {
         $(".tm-sidebar").removeClass("show");
       });
+
 });
+
+
