@@ -28,57 +28,59 @@
         </a>
           <form class="form-inline">
           <input class="form-control mr-sm-2" id="formulario" placeholder="Search" aria-label="Search">
-          <button class="btn btn-alert my-2 my-sm-0" id="buscar">Buscar</button>
+          <button class="btn btn-danger my-2 my-sm-0" id="buscar">Buscar</button>
           </form>
-      </nav>
-    <div class="row"> 
+    </nav>
+    <div class="row" id="sec2"> 
       <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
-          
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+          Temas
+        </button>  
         
         <div class="tm-brand-box">
           <h1 class="tm-brand text-uppercase">
-            Funciones de Distribución de Variable Continua
+            
           </h1>
         </div>
         
         <ul id="tmMainNav" class="nav flex-column text-uppercase text-left tm-main-nav">
           <li class="nav-item">
-            <a href="#1" class="nav-link active">
+            <a href="#1" class="nav-link active" onclick="desplegar(1)">
               <span class="d-inline-block mr-3">Funciones de Densidad</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#2" class="nav-link">
+            <a href="#2" class="nav-link" onclick="desplegar(2)">
               <span class="d-inline-block mr-3">Distribución Normal</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#3" class="nav-link">
+            <a href="#3" class="nav-link" onclick="desplegar(3)">
               <span class="d-inline-block mr-3">Distribucion Exponencial</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#4" class="nav-link">
+            <a href="#4" class="nav-link" onclick="desplegar(4)">
               <span class="d-inline-block mr-3 ">Distribucion Gamma</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#5" class="nav-link">
+            <a href="#5" class="nav-link" onclick="desplegar(5)">
               <span class="d-inline-block mr-3">Distribucion Chi Cuadrada</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#6" class="nav-link">
+            <a href="#6" class="nav-link" onclick="desplegar(6)">
               <span class="d-inline-block mr-3">Distribucion Weibull</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#7" class="nav-link">
+            <a href="#7" class="nav-link" onclick="desplegar(7)">
               <span class="d-inline-block mr-3">Distribucion lognormal</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#8" class="nav-link">
+            <a href="#8" class="nav-link" onclick="desplegar(8)">
               <span class="d-inline-block mr-3"></span>
             </a>
           </li>
@@ -88,7 +90,7 @@
         
       <main role="main" class="ml-sm-auto col-12">
         
-        <div class="tm-section-wrap" id="1">
+        <div class="tm-section-wrap" id="sect1">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -221,7 +223,7 @@
           </section>
         </div>
         
-        <div class="tm-section-wrap" id="2">
+        <div class="tm-section-wrap" id="sect2">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -391,7 +393,7 @@
           </section>
         </div>
         
-        <div class="tm-section-wrap" id="3">
+        <div class="tm-section-wrap" id="sect3">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -489,7 +491,7 @@
           </section>
         </div>
       
-        <div class="tm-section-wrap" id="4">
+        <div class="tm-section-wrap" id="sect4">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -577,7 +579,7 @@
           </section>
         </div>
 
-        <div class="tm-section-wrap" id="5">
+        <div class="tm-section-wrap" id="sect5">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">  
@@ -654,7 +656,7 @@
           </section>
         </div>
 
-        <div class="tm-section-wrap" id="6">
+        <div class="tm-section-wrap" id="sect6">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -731,7 +733,7 @@
           </section>
         </div>
 
-        <div class="tm-section-wrap" id="7">
+        <div class="tm-section-wrap" id="sect7">
           <section  class="row tm-section">
             <div class="s-header">
               <div class="tm-section-half text-justify">    
@@ -822,52 +824,7 @@
   <script src="js/jquery.singlePageNav.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/navs.js"></script>
-  <script>
-		const temas = [
-			{nombre: 'La Distribucion normal general', ref: 'pag/tema1.html'},
-			{nombre: 'La Distribucion normal reducida', ref: 'pag/tema2.html'},
-			{nombre: 'Funciones de Distribucion', ref: 'pag/tema3.html'},
-			{nombre: 'Media y Varianza de la Distribucion Normal', ref: 'pag/tema5.html'},
-			{nombre: 'Coeficientes de asimetria, kurtosis de distribucion normal', ref: 'pag/tema6.html'},
-			{nombre: 'Teorema de adicion', ref: 'pag/tema7.html'},
-			{nombre: 'Teorema Fundamental de las Distribuciones Normales', ref: 'pag/tema8.html'},
-			{nombre: 'Distribuciones Normales-Transformadas', ref: 'pag/tema9.html'},
-			{nombre: 'Teorema de Chebyshev', ref: 'pag/tema10.html'},
-			];
-		const formulario = document.querySelector('#formulario');
-		const boton = document.querySelector('#buscar');
-		const temitas = document.querySelector('#temas');
-
-		const filtrar = ()=>{
-			//console.log(formulario.value);
-			temitas.innerHTML = '';
-			const texto = formulario.value.toLowerCase();
-			for (let tema of temas) {
-				let nombre = tema.nombre.toLowerCase();
-				if(nombre.indexOf(texto)!== -1){
-					temitas.innerHTML += `
-						<li> <a class="btn btn-outline-dark tema" href="${tema.ref}">${tema.nombre}</a></li>
-					`
-				}
-			}
-
-			if (temitas.innerHTML === '') {
-				temitas.innerHTML += `
-					<li>Tema no encontrado</li>
-				`
-			}
-		}
-
-		boton.addEventListener('click', filtrar);
-		formulario.addEventListener('keyup', filtrar);
-
-		filtrar();
-  </script>
-  <script>
-    function ep(){
-  var ej=document.getElementById("ejemplos");
-  ej.innerHTML='Probando Ejemplos';
-}
+  <script src="js/pags.js"></script>
   </script>
 </body>
 </html>
