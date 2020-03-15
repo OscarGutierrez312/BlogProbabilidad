@@ -28,7 +28,7 @@ function ejemp(tema){
         cuadrada: 'https://docs.google.com/spreadsheets/d/1lQd0A39z5tbTZgRi_cE3Ol9PggTeyR0s31Wamz2Oe68/edit?usp=sharing',
         weibull:'https://docs.google.com/spreadsheets/d/17z5lOA2b3Jq50L5gxWLHNnzzIUW0qawveQAExcoZQfg/edit?usp=sharing',
         logaritmica:'https://docs.google.com/spreadsheets/d/13lLaCwNnrRMzNdUmeD5SDJw3kpPXuUoPCtNp9SorX1Q/edit?usp=sharing',
-        beta:''
+        beta:'https://docs.google.com/spreadsheets/d/1zJ9nPOx2PE0IPnS02pgrtVLEktuUyts_5ymLRyb9njo/edit?usp=sharing'
     };
 
     var frame='<iframe src="'+ejemplos[tema]+'"width="100%"height="100%"></iframe>'

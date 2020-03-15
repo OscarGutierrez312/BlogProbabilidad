@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="bootstrap-4.4.1-dist/JQuery/jquery-3.4.1.slim.js"></script>
-    <script src="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="js/bootstrap.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -567,35 +567,45 @@
                   <div class="col">
                     
                 <p>                      
-                  Sea X la distancia (m) que un animal recorre desde el sitio de
-                  su nacimiento hasta el primer territorio vacante que encuentra.
-                   Suponga que ratas canguro con etiqueta en la cola, X tiene una distribución 
-                   chi Cuadrada con parámetro u= 0.01386
+                  Si X tiene la siguiente distribución de probabilidad:
                 </p> 
+                <img src="images/D_ChiCuadrada/Ecu1.png">
+                <blockquote>
+                 <cite>
+                  <span class="hint--top hint--large" 
+                  data-hint="Ecuación 1. [Formula]. Editado en codedogs.com">
+                  <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[1]</a></span>
+                 </cite>
+ 
+                </blockquote>
                 <p>
-                  Evalúe lo siguiente:
+                  Calcule la distribución para:
                   
                 </p>
                 <p>
+                  
                   <ol type="a">
-                    <li class="subitems">T(6).</li>
-                    <li class="subitems">T(5/2)</li>
+                    <li class="subitems"><img src="images/D_ChiCuadrada/num.png" ></li>
+                    
                   </ol>
                 </p>
               
                 <blockquote> 
                   <cite>
-                      Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
-                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.131)
+                      Adaptado del Ejercicio 7.5 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                      Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.223)
                   </cite>
                 </blockquote>  
                   </div>
                   <div class="col">
-                    <img src="images/D_ChiCuadrada/anim.jfif" style="width: 400px;height: 300px;">
+                    <img src="images/D_ChiCuadrada/tit.jpg" >
+                    <img src="images/D_ChiCuadrada/Graf.jpg" style="width: 400px;height: 300px;">
                     <blockquote> 
                       <cite>
-                        Recorrido Animal [Ilustración]. Tomado de <a href="https://sp.depositphotos.com/category/jewelry-gems.html">depositphotos</a>
-                      </cite>
+                        <span class="hint--top hint--large" 
+                        data-hint="Walpole R., Myers R., Myers S., Keying Ye (2007).Figura 8.7 [Grafica]. Tomado de Probabilidad y Estadística para ingeniería y Ciencias (8va Edición).(p.245)">
+                        <a href="https://vereniciafunez94hotmail.files.wordpress.com/2014/08/8va-probabilidad-y-estadistica-para-ingenier-walpole_8.pdf">[2]</a></span>
+                         </cite>
                     </blockquote>
                   </div>
                 </div>
@@ -608,20 +618,46 @@
               <div class="col-xl-6">
               <div class="tm-section-half text-justify">    
                                         
-                  <h2 class="tm-section-title tm-color-primary font-italic mb-4"></h2>
-                  <ol>
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de solución</h2>
+                  <ol type="a">
+                    <li>
+                      <ol>
+                        <li>La función inversa de Y es:</li>
+                        <img src="images/D_ChiCuadrada/Paso1.png" >
+                        <li>Aplicando teorema de distribuciones de probabilidad:</li>
+                        <img src="images/D_ChiCuadrada/Paso2.png">
+                        <li>Finalmente:</li>
+                        <img src="images/D_ChiCuadrada/Paso3.png" >
+                        <p class="resp">Respuesta: </p>
+                        <p class="conc">La distribución de probabilidad para <b>Y</b> es una distribución Chi Cuadrada con 2 grados de libertad.</p>
+                      
+                      </ol>
+                    </li>
                     <button type="button" class="btn btn-primary" onclick="ejemp('cuadrada');">Presione para ir al ejemplo interactivo</button>
                     
                   </ol>
                                   
               </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6" style="margin-bottom: 7%;">
             
               <div class="tm-section-half">
                   
-                <h2 class="tm-section-title tm-color-primary font-italic mb-4"></h2>
-                <ol>
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos aplicados en la solución</h2>
+                <ol type="a">
+                  <li>
+                   
+                     Teorema de distribuciones de probabilidad
+                      <img src="images/D_ChiCuadrada/teo.jpg" style="width: 480px; height: 250px;">
+                      <blockquote> 
+                        <cite>
+                          <span class="hint--top hint--large" 
+                          data-hint="Walpole R., Myers R., Myers S., Keying Ye (2007).Teorema 7.5 [Texto]. Tomado de Probabilidad y Estadística para ingeniería y Ciencias (8va Edición). (p.217)">
+                          <a href="https://vereniciafunez94hotmail.files.wordpress.com/2014/08/8va-probabilidad-y-estadistica-para-ingenier-walpole_8.pdf">[2]</a></span>
+                           </cite>
+                      </blockquote>
+                  </li>
+
                 </ol>
                
             </div>
@@ -658,7 +694,9 @@
                     style="max-width: 300px; max-height: 300px;margin-left: 10%;">
                     <blockquote> 
                       <cite>
-                        Audifono Digital [Ilustración]. Tomado de <a href="https://sp.depositphotos.com/category/jewelry-gems.html">depositphotos</a>
+                        <span class="hint--top hint--medium" 
+                        data-hint="Audífono Digital. [Ilustración].Tomado de depositphotos.com">
+                        <a href="https://sp.depositphotos.com/category/jewelry-gems.html">[1]</a></span>
                       </cite>
                     </blockquote>
                   </div>
@@ -674,15 +712,16 @@
                   <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de Solución</h2>
                   <ol>
                     <li>Se aplica definición de distribución weibull:</li>
-                      <img src="images/D_Weibull/Paso1.gif" >
+                      <img src="images/D_Weibull/Paso1.png" >
                     <li>Se opera de acuerdo a la expresión obtenida:</li>
-                      <img src="images/D_Weibull/Paso2.gif" >
-                    <li><img src="images/D_Weibull/Paso3.gif" ></li>
-                    <li><img src="images/D_Weibull/Paso4.gif" ></li>
-                    <li><img src="images/D_Weibull/Paso5.gif" ></li>
+                      <img src="images/D_Weibull/Paso2.png" >
+                    <img src="images/D_Weibull/Paso3.png" >
+                    <li>Finalmente:</li> 
+                      <img src="images/D_Weibull/Paso4.png" >
+                    <li>El resultado es 1.25</li>
                     
                     <p class="resp">Respuesta:</p>
-                    <p class="conc">La probabilidad de que la bateria del audifono es de 12,5%</p>
+                    <p class="conc">El tiempo en años que durará la bateria del audifono es de 1.25 años</p>
                     <button type="button" class="btn btn-primary" onclick="ejemp('weibull');">Presione para ir al ejemplo interactivo</button>
                     
                   </ol>
@@ -699,8 +738,9 @@
                   <img src="images/D_Weibull/def.jpg" >
                   <blockquote> 
                     <cite>
-                      Ecuación 6.1. [Formula]. Editado en <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">codecogs</a>
-                    </cite>
+                      <span class="hint--top hint--medium" 
+                      data-hint="Ecuación 1. [Formula]. Editado en codedogs.com">
+                      <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[2]</a></span></cite>
                   </blockquote>
                 </ol>
             </div>
@@ -712,7 +752,7 @@
             <div class="s-header">
               <div class="tm-section-half text-justify">    
                                         
-                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Logaritmica Normal</h2>
+                <h2 class="tm-section-title tm-color-primary font-italic mb-4">Distribución Logarítmica Normal</h2>
                 <h5><b>Ejemplo :</b></h5>
                 <div class="row">
                   <div class="col">
@@ -738,7 +778,9 @@
                     style="max-width: 460px; max-height: 470px;">
                     <blockquote> 
                       <cite>
-                        Tabla de Decibelios [Ilustración]. Tomado de <a href="https://sp.depositphotos.com/category/jewelry-gems.html">depositphotos</a>
+                        <span class="hint--top hint--medium" 
+                        data-hint="Tabla de Decibelios. [Ilustración].Tomado de depositphotos.com">
+                        <a href="https://sp.depositphotos.com/category/jewelry-gems.html">[1]</a></span>
                       </cite>
                     </blockquote>
                   </div>
@@ -779,13 +821,14 @@
                   <img src="images/D_LogNormal/def.jpg" >
                   <blockquote> 
                     <cite>
-                      Ecuación 7.1. [Formula]. Editado en <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">codecogs</a>
+                     
+                    <span class="hint--top hint--medium" 
+                    data-hint="Ecuación 1. [Formula]. Editado en codedogs.com">
+                    <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[2]</a></span>
                     </cite>
                   </blockquote>
                   
-                  <a href="https://docs.google.com/spreadsheets/d/1Q3287PGAx0WH3mzYGJXprSwN4NaDEjofFUDewmu_swU/edit#gid=0" style="margin-left: 5%;">
-                    Haga click para ir al ejemplo interactivo
-                    </a>
+                  
                 </ol>
             </div>
           </section>
@@ -801,42 +844,31 @@
                 <div class="row">
                   <div class="col">
                     <p>                      
-                      La cantidad de horas en las que un vehiculo tarda en atravesar una 
-                      autopista de 1 km en un recorrido rectilíneo, esta descrita por la <b>variable aleatoria X</b>, 
-                      con función de densidad:
+                      Una marca de equipos de sonido determina
+                      una variable aleatoria que tiene una distribución beta
+                      con α = 3 y β = 2. La cual representa la proporción de equipos que
+                      requieren servicio durante el primer año de operación<br>
+                      ¿Cuál es la probabilidad de que al
+                      menos 80% de los nuevos modelos de esta marca que
+                      se vendieron este año requieran servicio durante su primer año de operación?
                     </p> 
-                    <img src="images/F_Densidad/funDens.jpg" width="250px" height="100px">
                     
-                        
-                    <span class="hint--top hint--medium" 
-                    data-hint="Ecuación 1. [Formula]. Editado en codeodogs.com"><a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[1]</a></span>
                     
-                      
-                    <p>
-                      Calcule la probabilidad de que el vehiculo:
-                      
-                    </p>
-                    <p>
-                      <ol type="a">
-                        <li class="subitems">tarde 12 minutos.</li>
-                        <li class="subitems">tarde entre 10 y 20 minutos.</li>
-                      </ol>
-                    </p>
                     <blockquote> 
                       <cite>
-                          Adaptado del Ejercicio 3.7 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
-                          Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.131)
+                          Adaptado del Ejercicio 6.50 Propuesto por Walpole R., Myers R., Myers S., Keying Ye (2007).
+                          Probabilidad y Estadística para ingeniería y Ciencias (8va Edición),<br> Mexico D.F. : Pearson (p.206)
                       </cite>
                     </blockquote>  
                       
                   </div>
                   <div class="col">
-                    <img src="images/F_Densidad/Carros.jpg" 
+                    <img src="images/D_Beta/sonido.jpg" 
                     style="max-width: 460px; max-height: 470px;">
                     <blockquote> 
                       <cite>
                         <span class="hint--top hint--medium" 
-                        data-hint="Vehiculos, carretera [Ilustración].Tomado de depositphotos.com"><a href="https://sp.depositphotos.com/category/jewelry-gems.html">[2]</a></span>
+                        data-hint="Cojín de MPC [Ilustración].Tomado de depositphotos.com"><a href="https://sp.depositphotos.com/category/jewelry-gems.html">[1]</a></span>
                         
                       </cite>
                     </blockquote>
@@ -853,34 +885,21 @@
               <div class="tm-section-half text-justify">    
                                         
                   <h2 class="tm-section-title tm-color-primary font-italic mb-4">Pasos de solución</h2>
-                  <ol type="a">
-                    <li>
-                      <ol>
-                        <li>Se plantean las siguientes integrales:</li>
-                        <img src="images/F_Densidad/Paso 1.png" style="margin-bottom: 30px;">
-                        
-                        <li>Evaluar las integrales y operar:</li>
-                        <img src="images/F_Densidad/Paso 2.png" style="margin-bottom: 30px;">
-                        <li>El resultado es: 0.68</li>
-                        <h5 class="resp">Respuesta:</h5>
-                        <p class="conc">La probabilidad de que tarde 12 minutos es de 68%</p>
-                        
-                      </ol>
-                      
-                    </li>
-                    <li>
-                      <ol>
-                        <li>Se plantea la siguiente integral:</li>
-                        <img src="images/F_Densidad/Paso 3.png" style="margin-bottom: 30px;">
-                        <li>Evaluar la integral y operar:</li>
-                        <img src="images/F_Densidad/Paso 4.png" style="margin-bottom: 30px;">
-                        <li>El resultado es: 0.375</li>
-                        <h5 class="resp">Respuesta:</h5>
-                        <p class="conc">La probabilidad de que tarde entre 10 y 20 minutos es de 37.5%</p> 
-                      </ol>
-                      <button type="button" class="btn btn-primary" onclick="ejemp('densidad');">Presione para ir al ejemplo interactivo</button>
-                    </li>
+                  
+                  <ol>
+                    <li>Se plantea la función de densidad:</li>
+                    <img src="images/D_Beta/Paso1.png" style="margin-bottom: 30px;">
+                    
+                    <li>Se resuelve para a X > 0.8:</li>
+                    <img src="images/D_Beta/Paso2.png" style="margin-bottom: 30px;">
+                    <li>El resultado es: 0.18</li>
+                    <h5 class="resp">Respuesta:</h5>
+                    <p class="conc">La probabilidad de que los modelos requieran servicio durante su primer año de operación es de 18%, es decir 9 de cada 50 equipos.</p>
+                    <button type="button" class="btn btn-primary" onclick="ejemp('beta');">Presione para ir al ejemplo interactivo</button>
+                  
                   </ol>
+                      
+                    
                                    
               </div>
             </div>
@@ -889,25 +908,34 @@
               <div class="tm-section-half">
                   
                 <h2 class="tm-section-title tm-color-primary font-italic mb-4">Conceptos aplicados en la solución</h2>
-                <ol type="a">
-                  <li>
+                
                     <ol>
+                      <li>Por definición de Distribución Beta:</li>
+                      <img src="images/D_Beta/def.jpg" style="margin-bottom: 30px;">
+                      
+                     <blockquote>
+                       <cite>
+                        <span class="hint--top hint--medium" 
+                        data-hint="Ecuación 1. [Formula]. Editado en codedogs.com">
+                        <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[2]</a></span>
+                       </cite>
+                     </blockquote>
+                    
+                      
                       <li>Por definición de distribución de probabilidad:</li>
                       <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
-                      
-                      <li>Por Teorema Fundamental del Cálculo para integrales definidas:</li>
-                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 90px;"> 
+                                              
+                        <blockquote>
+                          <cite>
+                            <span class="hint--top hint--medium" 
+                            data-hint="Ecuación 2. [Formula]. Editado en codedogs.com">
+                            <a href="https://www.codecogs.com/latex/eqneditor.php?lang=es-es">[3]</a></span>
+                          </cite>
+
+                        </blockquote>
+                    
                        </ol>
-                  </li>
-                  <li>
-                    <ol>
-                      <li>Por definición de distribucion de probabilidad:</li>
-                      <img src="images/F_Densidad/DefDist.jpg" style="margin-bottom: 30px;">
-                      <li>Por Teorema Fundamental del Calculo para integrales definidas:</li>
-                      <img src="images/F_Densidad/DefInt.png" style="margin-bottom: 140px;"> 
-                       </ol>
-                  </li>
-                </ol>
+                  
               </div>
             </div>
           </section>
