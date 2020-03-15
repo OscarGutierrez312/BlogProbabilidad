@@ -5,7 +5,21 @@ $(document).ready(function(){
     }
     $("#interact").hide()
 });
-
+$("#buscar").click(function(){
+    var tema=document.getElementById("formulario").value;
+    var temas={
+        densidad:1,
+        normal:2,
+        exponencial:3,
+        gamma:4,
+        chicuadrada:5,
+        weibull:6,
+        logaritmica:7,
+        beta:8
+    };
+    desplegar(temas[tema]);
+    console.log("funcionando", tema)
+});
 function desplegar(tema){
     $("#interact").hide()
     for (var i = 1; i < 9; i++) {
