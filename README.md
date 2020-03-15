@@ -1,1 +1,2 @@
 # BlogProbabilidad
+Distribuciones Continuas
