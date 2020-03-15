@@ -175,6 +175,14 @@ body {
   #section{
     margin-left: 300px;
   }
+
+  .inter{
+    margin-left: 17%;
+
+    width: 83%;
+    height:545px;
+   
+  }
   .resp{
     color:red;
   }
@@ -431,6 +439,10 @@ body {
     }
     .s-header{
       padding-left: 2%;
+    }
+    .inter{
+      margin: 0;
+      width: 100%;
     }
   }
   
