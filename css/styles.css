@@ -9,6 +9,12 @@ body {
     background-color: rgb(255, 255, 255);
   }
   
+  [class*=hint--]:after {
+    max-width: 240px;
+    white-space: pre;
+    word-break: unset;
+}
+ 
   p {
     line-height: 2em;
     font-family: sans-serif;
